@@ -3,7 +3,7 @@ body {
 	padding: 0;
 	font-family: Arial;
 }
-
+/* Обертка верха*/
 .wrapper-top {
 	width: 100%;
 	height: 237px;
@@ -17,6 +17,10 @@ body {
 	height: 1000px;
 }
 
+/* Обертка верха*/
+
+
+/*Картинка с облаками*/
 .main-picture p.p-name {
 	font-size: 44px;
 	font-weight: bold;
@@ -32,7 +36,7 @@ body {
 	margin: 125px 15px 15px 0;
 }
 
-.main-picture p a {
+.two-green-lines-link {
 	cursor: pointer;
 	color: #009900;
 	display: inline-block;
@@ -47,6 +51,10 @@ body {
 	background-image: url(picture.jpg);
 	margin: 0 auto;
 }
+
+/*Картинка с облаками*/
+
+/*Обертка для сайдбаров и центра*/
 
 .container {
 	width: 100%;
@@ -66,6 +74,8 @@ body {
 	display: block;
 	height: 0;
 }
+
+/*Левая колонка*/
 
 .sidebar-left {
 	width: 225px;
@@ -95,6 +105,10 @@ body {
 	border-radius: 0 0 20px 0;
 }
 
+/*Конец левой колонки*/
+
+/*Центральная часть*/
+
 .main-content {
 	width: 410px;
 	border-radius: 20px;
@@ -103,12 +117,44 @@ body {
 	display: inline-block;
 	float: left;
 }
-
-.main-content p {
-	padding: 10px;
-	text-align: justify;
-	font-size: 10px;
+.main-content-2 {
+	width: 410px;
+	border-radius: 20px;
+	margin: 10px auto;
+	background-color: rgb(238,245,251);
+	display: inline-block;
+	float: left;
 }
+
+.main-content h2, .main-content-2 h2 {
+	font-family: Arial;
+	font-size: 16px;
+	color: #1779D4;
+	text-indent: 10px;
+	line-height: 10px;
+	display: block;
+
+}
+
+.main-content p, .main-content-2 p {
+	display: block;
+	margin-top: -.5em;
+	padding: 0 10px 10px 10px;
+	text-align: justify;
+	font-size: 12px;
+}
+
+.more {
+	cursor: pointer;
+	color: #009900;
+	display: inline-block;
+	text-decoration: underline;
+	border-bottom: 1px solid #009900;
+	text-indent: 0;
+	line-height: 1.3em;
+}
+
+/*Конец центральной части*/
 
 
 .link-in-text-green {
@@ -122,16 +168,15 @@ body {
 	color: #17A3E9;
 }
 
-
 .link-in-text:hover {
 	color: #A0D8E9;
 	border-bottom: 1px dotted #A0D8E9;
 	cursor: pointer;
 }
 
-
 .articles {
-	font-size: 24px;
+	display: block;
+	font-size: 17px;
 	padding-left: 22px;
 	font-weight: bold;
 	color: #1D5174;
@@ -139,12 +184,13 @@ body {
 
 }
 .sidebar-left-1 ul a {
+	display: block;
 	font-family: Arial;
 	text-align: left;
 	font-weight: bold;
 	padding: 5px;
-	font-size: 16px;
-	line-height: 18px;
+	font-size: 14px;
+	line-height: 10px;
 	color: #1779D4;
 	text-decoration: none;
 }
@@ -152,16 +198,20 @@ body {
 .sidebar-left ul a:hover, .sidebar-right ul a:hover {
 	color: #CFEBDD;
 }
- 
+
+
+/*Сайдбар правый*/
+
 .sidebar-right {
 	width: 225px;
 	margin: 0 0 0 20px;
+	display: inline-block;
 	float: left;
 }
 
 .sidebar-right-1, .sidebar-right-2, .sidebar-right-3, .sidebar-right-4 {
 	width: 225px;
-	height: 200px;
+	height: 190px;
 	float: right;
 	margin: 0 10px 20px 10px;
 	display: inline-block;
@@ -170,14 +220,13 @@ body {
 }
 
 .sidebar-right-4 {
-	height: 180px;
+	height: 170px;
 }
-
 
 .bottom-gradient-plus-right {
 	width: 225px;
 	height: 16px;
-	margin: 0 0 10px 0;
+	margin: 0;
 	background: -moz-linear-gradient(rgb(175,211,235), rgb(209,230,243));
 	display: inline-block;
 	border-radius: 0 0 0 20px;
@@ -188,13 +237,20 @@ body {
 	padding: 5px;
 }    
     
+.sidebar-right .articles {
+	display: block;
+	text-align: right;
+	margin-right: 20px;
+}
+
 .sidebar-right ul a {
+	display: block;
 	font-family: Arial;
 	text-align: right;
 	font-weight: bold;
 	padding: 5px;
-	font-size: 16px;
-	line-height: 18px;
+	font-size: 14px;
+	line-height: 10px;
 	color: #1779D4;
 	text-decoration: none;
 }
@@ -206,11 +262,15 @@ body {
 	height: 0;
 }
 
+/*Конец сайдбара правого*/
+    
+    
+/*Жирный в тексте*/   
 
-    
-    
-    
-    
+.in-text-bold {
+	font-weight: bold;
+
+}    
     
 
     

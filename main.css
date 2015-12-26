@@ -5,7 +5,7 @@ body {
 	padding: 0;
 
 }
-/* Обертка верха*/
+/* BEGINNING of Wrapper for top panel*/
 .wrapper-top {
 	background: -moz-linear-gradient(rgb(140,189,225), rgb(79,153,208));
 	background: -webkit-linear-gradient(rgb(140,189,225), rgb(79,153,208));
@@ -21,10 +21,10 @@ body {
 	width: 100%;
 }
 
-/* Конец обертки верха*/
+/* END of Wrapper for top panel*/
 
 
-/*Картинка с облаками*/
+/*BEGINNING of Picture*/
 .main-picture p.p-name {
 	color: #EEF5FD;
 	font-size: 44px;
@@ -64,9 +64,9 @@ body {
 
 }
 
-/*Картинка с облаками*/
+/*END of Picture*/
 
-/*Обертка для сайдбаров и центра*/
+/*BEGINNING of Wrapper for sidebars and Centre*/
 
 .container {
 	background: -moz-linear-gradient(rgb(79,153,208),rgb(140,189,225));
@@ -93,7 +93,7 @@ body {
 	height: 0;
 }
 
-/*Левая колонка*/
+/*Left column*/
 
 .sidebar-left {
 	float: left;
@@ -130,9 +130,9 @@ body {
 	width: 215px;
 }
 
-/*Конец левой колонки*/
+/*End of left column*/
 
-/*Центральная часть*/
+/*Centre part*/
 
 .main-content-wrapper {
 	display: inline-block;
@@ -188,13 +188,13 @@ body {
 	text-indent: 0;
 }
 
-/*Жирный в тексте*/   
+/*Bold font*/   
 
 .in-text-bold {
 	font-weight: bold;
 }
 
-/*Конец центральной части*/
+/*END OF center part*/
 
 
 .link-in-text-green {
@@ -239,7 +239,7 @@ body {
 }
 
 
-/*Сайдбар правый*/
+/*Sidebar right*/
 
 .sidebar-right {
 	float: left;
@@ -316,7 +316,7 @@ body {
 
 }
 
-/*Конец сайдбара правого*/
+/*END OF Sidebar right*/
     
     
 /* Clear fix after 3 colmns*/
@@ -366,13 +366,4 @@ body {
 .footer p a:hover{
 	border-bottom: 1px dotted #4DA9F1;
 	color: #4DA9F1;
-}    
-    
-    
-    
-    
-    
-    
-    
-   
-    
+}

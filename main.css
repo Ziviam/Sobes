@@ -1,55 +1,67 @@
 body {
+	background-color: #8CBDE1;
+	font-family: Arial;
 	margin: 0;
 	padding: 0;
-	font-family: Arial;
+
 }
 /* Обертка верха*/
 .wrapper-top {
-	width: 100%;
-	height: 237px;
-	height: 160px;
 	background: -moz-linear-gradient(rgb(140,189,225), rgb(79,153,208));
+	background: -webkit-linear-gradient(rgb(140,189,225), rgb(79,153,208));
+	background: -o-linear-gradient(rgb(140,189,225), rgb(79,153,208));
+	background: linear-gradient(rgb(140,189,225), rgb(79,153,208));
 	border-bottom: 10px solid #fff;
+	height: 160px;
+	height: 237px;
+	width: 100%;
 }
 
 .wrapper {
 	width: 100%;
-	height: 1000px;
 }
 
-/* Обертка верха*/
+/* Конец обертки верха*/
 
 
 /*Картинка с облаками*/
 .main-picture p.p-name {
+	color: #EEF5FD;
 	font-size: 44px;
 	font-weight: bold;
-	color: #EEF5FD;
 	margin: 15px 0 0 15px;
 }
 
 .main-picture p.p-author {
+	color: #2661CE;
 	font-size: 24px;
 	font-weight: bold;
-	text-align: right;
-	color: #2661CE;
 	margin: 125px 15px 15px 0;
+	text-align: right;
 }
 
 .two-green-lines-link {
-	cursor: pointer;
+	border-bottom: 2px solid #009900;
 	color: #009900;
+	cursor: pointer;
 	display: inline-block;
 	text-decoration: underline;
-	border-bottom: 2px solid #009900;
+}
+
+.wrapper-picture {
+	margin: 0 auto;
+	position: relative;
 }
 
 .main-picture {
-	width: 880px;
-	height: 237px;
-	border: 10px solid #fff;
 	background-image: url(picture.jpg);
-	margin: 0 auto;
+	border: 10px solid #fff;
+	height: 237px;
+	margin: -140px auto 0 auto;
+	position: relative;
+	width: 880px;
+	z-index: 999;
+
 }
 
 /*Картинка с облаками*/
@@ -57,20 +69,26 @@ body {
 /*Обертка для сайдбаров и центра*/
 
 .container {
-	width: 100%;
-	margin: 0 auto;
 	background: -moz-linear-gradient(rgb(79,153,208),rgb(140,189,225));
+	background: -o-linear-gradient(rgb(79,153,208),rgb(140,189,225));
+	background: -webkit-linear-gradient(rgb(79,153,208),rgb(140,189,225));
+	background: linear-gradient(rgb(79,153,208),rgb(140,189,225));
+	margin-bottom: 0;
+	margin-top: -115px;
+	padding-bottom: 0;
+	position: relative;
+	width: 100%;
 }
 
 .main-part {
-	width: 900px;
 	background-color: #fff;
 	margin: 0 auto;
+	width: 900px;
 }
 
 .main-part::after {
-	content: " ";
 	clear: both;
+	content: " ";
 	display: block;
 	height: 0;
 }
@@ -78,9 +96,10 @@ body {
 /*Левая колонка*/
 
 .sidebar-left {
-	width: 225px;
-	margin: 0 10px 10px 10px;
 	float: left;
+	margin: 0 10px 10px 10px;
+	padding-top: 115px;
+	width: 215px;
 }
 
 .sidebar-left-1 ul {
@@ -90,78 +109,99 @@ body {
 
 
 .sidebar-left-1 {
-	width: 225px;
-	float: left;
-	display: inline-block;
-	border-radius: 0 20px 0 0;
 	background: -moz-linear-gradient(rgb(209,230,243) 8px, rgb(175,211,235) 16px);
+	background: -o-linear-gradient(rgb(209,230,243) 8px, rgb(175,211,235) 16px);
+	background: -webkit-linear-gradient(rgb(209,230,243) 8px, rgb(175,211,235) 16px);
+	background: linear-gradient(rgb(209,230,243) 8px, rgb(175,211,235) 16px);
+	border-radius: 0 20px 0 0;
+	display: inline-block;
+	float: left;
+	width: 215px;
 }
 
 .bottom-gradient-plus-left {
-	width: 225px;
-	height: 16px;
 	background: -moz-linear-gradient(rgb(175,211,235), rgb(209,230,243));
-	display: inline-block;
+	background: -o-linear-gradient(rgb(175,211,235), rgb(209,230,243));
+	background: -webkit-linear-gradient(rgb(175,211,235), rgb(209,230,243));
+	background: linear-gradient(rgb(175,211,235), rgb(209,230,243));
 	border-radius: 0 0 20px 0;
+	display: inline-block;
+	height: 16px;
+	width: 215px;
 }
 
 /*Конец левой колонки*/
 
 /*Центральная часть*/
 
+.main-content-wrapper {
+	display: inline-block;
+	float: left;
+	padding-top: 100px;
+	width: 430px;
+}
+
 .main-content {
-	width: 410px;
+	background-color: rgb(238,245,251);
 	border-radius: 20px;
 	margin: 0 auto;
-	background-color: rgb(238,245,251);
-	display: inline-block;
-	float: left;
+	width: 430px;
+
+
 }
 .main-content-2 {
-	width: 410px;
-	border-radius: 20px;
-	margin: 10px auto;
 	background-color: rgb(238,245,251);
+	border-radius: 20px;
 	display: inline-block;
 	float: left;
+	margin: 0 auto;
+	width: 430px;
 }
 
 .main-content h2, .main-content-2 h2 {
-	font-family: Arial;
-	font-size: 16px;
 	color: #1779D4;
-	text-indent: 10px;
-	line-height: 10px;
 	display: block;
+	font-family: Arial;
+	font-size: 18px;
+	line-height: 12px;
+	padding-top:10px;
+	position: relative;
+	text-indent: 10px;
 
 }
 
 .main-content p, .main-content-2 p {
 	display: block;
+	font-size: 12px;
 	margin-top: -.5em;
 	padding: 0 10px 10px 10px;
 	text-align: justify;
-	font-size: 12px;
 }
 
 .more {
-	cursor: pointer;
-	color: #009900;
-	display: inline-block;
-	text-decoration: underline;
 	border-bottom: 1px solid #009900;
-	text-indent: 0;
+	color: #009900;
+	cursor: pointer;
+	display: inline-block;
 	line-height: 1.3em;
+	text-decoration: underline;
+	text-indent: 0;
+}
+
+/*Жирный в тексте*/   
+
+.in-text-bold {
+	font-weight: bold;
 }
 
 /*Конец центральной части*/
 
 
 .link-in-text-green {
-	text-decoration: underline;
+	border-bottom: 1px solid #009900;
 	color: #009900;
 	display: inline;
-	border-bottom: 1px solid #009900;
+	text-decoration: underline;
 }
 
 .link-in-text {
@@ -169,29 +209,28 @@ body {
 }
 
 .link-in-text:hover {
-	color: #A0D8E9;
 	border-bottom: 1px dotted #A0D8E9;
+	color: #A0D8E9;
 	cursor: pointer;
 }
 
 .articles {
+	color: #1D5174;
 	display: block;
 	font-size: 17px;
-	padding-left: 22px;
 	font-weight: bold;
-	color: #1D5174;
 	line-height: 5px;
-
+	padding-left: 22px;
 }
 .sidebar-left-1 ul a {
+	color: #1779D4;
 	display: block;
 	font-family: Arial;
-	text-align: left;
-	font-weight: bold;
-	padding: 5px;
 	font-size: 14px;
+	font-weight: bold;
 	line-height: 10px;
-	color: #1779D4;
+	padding: 5px;
+	text-align: left;
 	text-decoration: none;
 }
 
@@ -203,20 +242,22 @@ body {
 /*Сайдбар правый*/
 
 .sidebar-right {
-	width: 225px;
-	margin: 0 0 0 20px;
-	display: inline-block;
 	float: left;
+	margin-left: 0px;
+	padding-top: 115px;
+	width: 215px;
 }
 
 .sidebar-right-1, .sidebar-right-2, .sidebar-right-3, .sidebar-right-4 {
-	width: 225px;
-	height: 190px;
-	float: right;
-	margin: 0 10px 20px 10px;
-	display: inline-block;
-	border-radius: 20px 0 0 0;
 	background: -moz-linear-gradient(rgb(209,230,243) 8px, rgb(175,211,235) 16px);
+	background: -o-linear-gradient(rgb(209,230,243) 8px, rgb(175,211,235) 16px);
+	background: -webkit-linear-gradient(rgb(209,230,243) 8px, rgb(175,211,235) 16px);
+	background: linear-gradient(rgb(209,230,243) 8px, rgb(175,211,235) 16px);
+	border-radius: 20px 0 0 0;
+	display: inline-block;
+	height: 190px;
+	margin: 0 10px 20px 10px;
+	width: 215px;
 }
 
 .sidebar-right-4 {
@@ -224,12 +265,15 @@ body {
 }
 
 .bottom-gradient-plus-right {
-	width: 225px;
-	height: 16px;
-	margin: 0;
 	background: -moz-linear-gradient(rgb(175,211,235), rgb(209,230,243));
-	display: inline-block;
+	background: -o-linear-gradient(rgb(175,211,235), rgb(209,230,243));
+	background: -webkit-linear-gradient(rgb(175,211,235), rgb(209,230,243));
+	background: linear-gradient(rgb(175,211,235), rgb(209,230,243));
 	border-radius: 0 0 0 20px;
+	display: inline-block;
+	height: 16px;
+	margin: 0 10px 0 0;
+	width: 215px;
 }
 
 .sidebar-right ul {
@@ -239,42 +283,90 @@ body {
     
 .sidebar-right .articles {
 	display: block;
+	margin-right: 10px;
 	text-align: right;
-	margin-right: 20px;
 }
 
 .sidebar-right ul a {
+	color: #1779D4;
 	display: block;
 	font-family: Arial;
-	text-align: right;
-	font-weight: bold;
-	padding: 5px;
 	font-size: 14px;
+	font-weight: bold;
 	line-height: 10px;
-	color: #1779D4;
+	padding: 5px;
+	text-align: right;
 	text-decoration: none;
 }
     
-.sidebar-right::after {
-	content: " ";
-	clear: both;
+.contact-us {
+	color: #1779D4;
 	display: block;
-	height: 0;
+	font-family: Arial;
+	font-size: 12px;
+	margin-left: 10px;
+	text-decoration: none;
+	width: 63px;
+}
+
+.contact-us:hover {
+	border-bottom: 1px dotted #4DA9F1;
+	color: #4DA9F1;
+	width: 63px;
+
 }
 
 /*Конец сайдбара правого*/
     
     
-/*Жирный в тексте*/   
+/* Clear fix after 3 colmns*/
 
-.in-text-bold {
+.container::after {
+	clear: both;
+	content: " ";
+	display: block;
+	height: 0;
+}
+
+.wrapper::after {
+	clear: both;
+	content: " ";
+	display: block;
+	height: 0;
+}
+.main-part::after {
+	clear: both;
+	content: " ";
+	display: block;
+	height: 0;
+}
+
+.footer {
+	background-color: #fff;
+	height: 40px;
+	margin: 0 auto;
+	width: 900px;
+}
+
+.footer p {
+	color: #1779D4;
+	display: block;
+	font-family: Arial;
+	font-size: 12px;
 	font-weight: bold;
+	line-height: 45px;
+	margin: 0 auto;
+	text-align: center;
+}
 
+.footer p a{
+	cursor: pointer;
+}
+    
+.footer p a:hover{
+	border-bottom: 1px dotted #4DA9F1;
+	color: #4DA9F1;
 }    
-    
-
-    
-    
     
     
     

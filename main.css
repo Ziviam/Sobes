@@ -5,7 +5,7 @@ body {
 	padding: 0;
 
 }
-/* Обертка верха*/
+/* Beginnong of top wrapper*/
 .wrapper-top {
 	background: -moz-linear-gradient(rgb(140,189,225), rgb(79,153,208));
 	background: -webkit-linear-gradient(rgb(140,189,225), rgb(79,153,208));
@@ -13,14 +13,13 @@ body {
 	background: linear-gradient(rgb(140,189,225), rgb(79,153,208));
 	border-bottom: 10px solid #fff;
 	height: 237px;
-
 }
 
 
-/* Конец обертки верха*/
+/* End of top wrapper*/
 
 
-/*Картинка с облаками*/
+/*Picture with clouds*/
 .main-picture p.p-name {
 	color: #EEF5FD;
 	font-size: 44px;
@@ -60,9 +59,9 @@ body {
 
 }
 
-/*Картинка с облаками*/
+/*End of picture with clouds*/
 
-/*Обертка для сайдбаров и центра*/
+/*Wrapper for sidebars and center*/
 
 .container {
 	background: -moz-linear-gradient(rgb(79,153,208),rgb(140,189,225));
@@ -89,7 +88,7 @@ body {
 	height: 0;
 }
 
-/*Левая колонка*/
+/*Beginning of sidebar left*/
 
 .sidebar-left {
 	float: left;
@@ -133,9 +132,9 @@ body {
 	background: linear-gradient(rgb(175,211,235), rgb(209,230,243));
 }
 
-/*Конец левой колонки*/
+/*End of sidebar left*/
 
-/*Центральная часть*/
+/*Beginning of central part*/
 
 .main-content-wrapper {
 	display: inline-block;
@@ -195,7 +194,7 @@ body {
 	font-weight: bold;
 }
 
-/*Конец центральной части*/
+/*End of central part*/
 
 
 .link-in-text-green {
@@ -242,7 +241,7 @@ body {
 
 
 
-/*Сайдбар правый*/
+/*Beginning of sidebar right*/
 
 .sidebar-right {
 	float: right;
@@ -295,20 +294,6 @@ body {
 	background: linear-gradient(rgb(175,211,235), rgb(209,230,243));
 }
 
-/*
-.bottom-gradient-plus-right {
-	background: -moz-linear-gradient(rgb(175,211,235), rgb(209,230,243));
-	background: -o-linear-gradient(rgb(175,211,235), rgb(209,230,243));
-	background: -webkit-linear-gradient(rgb(175,211,235), rgb(209,230,243));
-	background: linear-gradient(rgb(175,211,235), rgb(209,230,243));
-	border-radius: 0 0 0 20px;
-	display: inline-block;
-	height: 16px;
-	margin: 0 10px 0 0;
-	width: 215px;
-}
-*/
-
 .sidebar-right ul {
 	list-style-type: none;
 	padding: 5px;
@@ -349,7 +334,7 @@ body {
 
 }
 
-/*Конец сайдбара правого*/
+/*End of right sidebar*/
     
     
 /* Clear fix after 3 colmns*/
@@ -373,6 +358,11 @@ body {
 	display: block;
 	height: 0;
 }
+
+/*End of wrapper for sidebars and center*/
+
+
+/*Beginning of footer*/
 
 .footer {
 	background-color: #fff;
@@ -400,3 +390,5 @@ body {
 	border-bottom: 1px dotted #4DA9F1;
 	color: #4DA9F1;
 }
+
+/*End of footer*/
